@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap" rel="stylesheet">
 
-  
+
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
@@ -18,32 +18,32 @@
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
     <script>
-      $(document).ready(function(){
+        $(document).ready(function () {
 
-        $(".slider").bxSlider({
-          mode: 'horizontal',
-          randomStart: true,
-          controls: false,
-          auto: true,
-          pause: 5000,
-          autoHouver: true,
+            $(".slider").bxSlider({
+                mode: 'horizontal',
+                randomStart: true,
+                controls: false,
+                auto: true,
+                pause: 5000,
+                autoHouver: true,
 
+            });
         });
-      });
     </script>
 
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
 
-    <div class="header">
+    <header class="header">
 
 
 
-        <div class="container" >
+        <div class="container">
 
             <div class="logo">
 
@@ -57,69 +57,69 @@
             </div>
 
 
-            <div class="menu">
+            <nav class="menu">
                 <a href="#"> Início</a>
                 <a href="#academia"> Nossa Academia</a>
                 <a href="#planos-academia"> Planos</a>
                 <a href="#fale"> Fale Conosco</a>
 
 
+            </nav>
+
+        </div>
+
+
+
+    </header>
+
+    <div class="slider">
+
+        <article class="hero-section bg-1">
+
+            <div class="container">
+
+                <h1>Lorem Ipsum is simply dummy text of the</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    .</p>
+
+                <a href="#" class="btn">Lorem Ipsum</a>
             </div>
 
-        </div>
+        </article>
 
 
+        <article class="hero-section bg-2">
 
-    </div>
+            <div class="container">
 
-<div class="slider">
+                <h2>Lorem Ipsum is simply dummy text of the</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a
+                    .</p>
 
-    <div class="hero-section bg-1">
+                <a href="#" class="btn">Lorem Ipsum</a>
+            </div>
 
-        <div class="container">
-
-            <h1>Lorem Ipsum is simply dummy text of the</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it to make a
-                .</p>
-
-            <a href="#" class="btn">Lorem Ipsum</a>
-        </div>
-
+        </article>
     </div>
 
 
-    <div class="hero-section bg-2">
-
-        <div class="container">
-
-            <h1>Lorem Ipsum is simply dummy text of the</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been the industry's
-                standard dummy text ever since the 1500s, when an unknown
-                printer took a galley of type and scrambled it to make a
-                .</p>
-
-            <a href="#" class="btn">Lorem Ipsum</a>
-        </div>
-
-    </div>
-</div>
-
-  
 
 
 
-    <div class="container academia" id="academia">
+    <section class="container academia" id="academia">
 
         <div class="image" data-aos="fade-right">
             <img src="img/aluno.jpg" alt="#">
         </div>
         <div class="content" data-aos="fade-up">
 
-            <h2>Nossa Academia</h2>
+            <h3>Nossa Academia</h3>
             <p>It is a long established fact that a reader will be distracted
                 by the readable content of a page when looking at its layout.
                 The point of using Lorem Ipsum is that it has a more-or-less
@@ -137,17 +137,17 @@
         </div>
 
 
-    </div>
+    </section>
 
 
 
-    <div class="bg-light">
+    <section class="bg-light">
 
         <div class="container faca-parte">
 
-            <div class="content"  data-aos="fade-right" >
+            <div class="content" data-aos="fade-right">
 
-                <h2>Faça parte do time</h2>
+                <h3>Faça parte do time</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and
                     typesetting industry. Lorem Ipsum has been the industry's
                     standard dummy text ever since the 1500s, when an unknown
@@ -168,139 +168,140 @@
         </div>
 
 
-    </div>
+    </section>
 
 
 
-    <div class="planos" id="planos-academia">
+    <section class="planos" id="planos-academia">
 
         <div class="container">
 
             <div class="content" data-aos="fade-right">
-                <h2>Nossos Planos</h2>
+                <h3>Nossos Planos</h3>
                 <p>Contrary to popular belief, Lorem Ipsum is not simply random
                     text. It has roots in a piece of classical Latin literature from
                     45 BC, making it over 2000 years old. Richard McClintock, a Latin
                     professor at Hampden-Sydney College in Virginia, looked up one of.</p>
             </div>
 
-            <div class="flex-cards" >
+            <div class="flex-cards">
                 <div class="card" data-aos="fade-up">
-<h3> Plano mensal</h3>
-<p>There are many variations of passages of Lorem 
-    Ipsum available, but the majority have suffered.</p>
-    <span>R$ 64,90</span>
-    <ul>
-    <li>There are many variations</li>
-    <li>Passages of Lorem Ipsum</li>
-    <li>But the majority have</li>
-    <li>Contrary to popular belief</li>
-    </ul>
+                    <h3> Plano mensal</h3>
+                    <p>There are many variations of passages of Lorem
+                        Ipsum available, but the majority have suffered.</p>
+                    <span>R$ 64,90</span>
+                    <ul>
+                        <li>There are many variations</li>
+                        <li>Passages of Lorem Ipsum</li>
+                        <li>But the majority have</li>
+                        <li>Contrary to popular belief</li>
+                    </ul>
 
-    <a href="#" class="btn-outiline">Lorem Ipsum</a>
+                    <a href="#" class="btn-outiline">Lorem Ipsum</a>
 
                 </div>
-                <div class="card destaque" data-aos="fade-up"
-                data-aos-delay="300">
+                <div class="card destaque" data-aos="fade-up" data-aos-delay="300">
                     <h3> Plano anual</h3>
-<p>There are many variations of passages of Lorem 
-    Ipsum available, but the majority have suffered.</p>
-    <span>R$ 49,90</span>
-    <ul>
-    <li>There are many variations</li>
-    <li>Passages of Lorem Ipsum</li>
-    <li>But the majority have</li>
-    <li>Contrary to popular belief</li>
-    </ul>
+                    <p>There are many variations of passages of Lorem
+                        Ipsum available, but the majority have suffered.</p>
+                    <span>R$ 49,90</span>
+                    <ul>
+                        <li>There are many variations</li>
+                        <li>Passages of Lorem Ipsum</li>
+                        <li>But the majority have</li>
+                        <li>Contrary to popular belief</li>
+                    </ul>
 
-    <a href="#" class="btn">Lorem Ipsum</a>
+                    <a href="#" class="btn">Lorem Ipsum</a>
                 </div>
-               
-                <div class="card" data-aos="fade-up"
-                data-aos-delay="600">
-                    <h3> Plano semestral</h3>
-<p>There are many variations of passages of Lorem 
-    Ipsum available, but the majority have suffered.</p>
-    <span>R$ 54,90</span>
-    <ul>
-    <li>There are many variations</li>
-    <li>Passages of Lorem Ipsum</li>
-    <li>But the majority have</li>
-    <li>Contrary to popular belief</li>
-    </ul>
 
-    <a href="#" class="btn-outiline">Lorem Ipsum</a>
+                <div class="card" data-aos="fade-up" data-aos-delay="600">
+                    <h3> Plano semestral</h3>
+                    <p>There are many variations of passages of Lorem
+                        Ipsum available, but the majority have suffered.</p>
+                    <span>R$ 54,90</span>
+                    <ul>
+                        <li>There are many variations</li>
+                        <li>Passages of Lorem Ipsum</li>
+                        <li>But the majority have</li>
+                        <li>Contrary to popular belief</li>
+                    </ul>
+
+                    <a href="#" class="btn-outiline">Lorem Ipsum</a>
                 </div>
 
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-   
 
-    <div class="container fale-conosco" id="fale"> 
-        <div class="content" data-aos="fade-right"> 
-<h2>Fale com a Hard Core</h2>
-<p>There are many variations of passages of Lorem Ipsum available, 
-    but the majority have suffered alteration in some form, by injected humour, 
-    or randomised words which don't look even slightly believable. </p>
 
-<form action="">
+    <section class="container fale-conosco" id="fale">
+        <div class="content" data-aos="fade-right">
+            <h3>Fale com a Hard Core</h3>
+            <p>There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered alteration in some form, by injected humour,
+                or randomised words which don't look even slightly believable. </p>
 
-    <input type="text" placeholder="Digite seu nome" required>
-    <input type="email" placeholder="Digite seu e-mail" required>
-    <input type="text" placeholder="Digite seu telefone" required>
+            <form action="">
 
-    <textarea placeholder="Digite sua mensagem" required maxlength="140"></textarea>
+                <input type="text" placeholder="Digite seu nome" required>
+                <input type="email" placeholder="Digite seu e-mail" required>
+                <input type="text" placeholder="Digite seu telefone" required>
 
-<button class="btn-outiline">Loren Ipsum</button>
-</form>
+                <textarea placeholder="Digite sua mensagem" required maxlength="140"></textarea>
+
+                <button class="btn-outiline">Loren Ipsum</button>
+            </form>
 
 
 
         </div>
 
 
-        <div class="map" data-aos="fade-up"  data-aos-delay="300">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.943086235108!2d-43.2217352907348!3d-22.
+        <div class="map" data-aos="fade-up" data-aos-delay="300">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.943086235108!2d-43.2217352907348!3d-22.
             9154699791624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e56c97a5615%3A0xfa1c61a4e0e85871!2sCondom%C3
             %ADnio%20Edif%C3%ADcio%20Jornalista%20Pardal%20Mallet!5e0!3m2!1spt-BR!2sbr!4v1693425751819!5m2!1spt-BR!2sbr"
-             width="558" height="580" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </div>
+                width="558" height="580" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
-    </div>
-
-
-
- <div class="container"> 
-
-    <div class="footer">
-
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text ever since the 
-            1500s, when an unknown printer took a galley of type and scrambled it
-             to make a type specimen book.  </p>
-    </div>
-    <div class="social">
-
-        <a href="#"><img src="img/twitter.svg" alt=""></a>
-        <a href="#"><img src="img/youtube.svg" alt=""></a>
-        <a href="#"><img src="img/facebook.svg" alt=""></a>
-    </div>
- </div>
+    </section>
 
 
-<!-- ligação entre HTML e  jS -->
-  
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="js/script.js"> </script>
-<script>
-    AOS.init({
-       offset: -600, //problema da entrada do efeito( conflito de boblioteca)
-       once: true
-     } );
-  </script>
+
+    <footer class="container">
+
+        <div class="footer">
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the
+                1500s, when an unknown printer took a galley of type and scrambled it
+                to make a type specimen book. </p>
+        </div>
+        <nav class="social">
+
+            <a href="#"><img src="img/twitter.svg" alt=""></a>
+            <a href="#"><img src="img/youtube.svg" alt=""></a>
+            <a href="#"><img src="img/facebook.svg" alt=""></a>
+        </nav>
+    </footer>
+
+
+    <!-- ligação entre HTML e  jS -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"> </script>
+    <script>
+        AOS.init({
+            offset: -600, //problema da entrada do efeito( conflito de boblioteca)
+            once: true
+        });
+    </script>
 
 
 </body>

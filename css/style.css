@@ -1,0 +1,544 @@
+
+:root{
+
+    --primary: #101417;
+    --primary-brand: #b91f33;
+    --gray-light: #e1e1e1;
+    --gray: #666666;
+    --contrast: #e0e34c;
+
+}
+
+/*Ajustando as posições dos alvos*/
+#academia{
+    scroll-margin-top: 100px;
+}
+
+#planos{
+    scroll-margin-top: 100px;
+}
+
+#fale{
+    scroll-margin-top: 100px;
+}
+
+
+/*  o * significa todos os elementos do html*/
+*{
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;/*texto em maiúsculo*/
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+
+  
+    margin: 0;
+    background-color: var(--primary);
+   
+}
+
+h1,h3,h4,h5,h6{
+    margin: 0;
+}
+
+h2{
+    color: #fff;
+    font-size: 40px;
+
+}
+
+h3{
+    color: #fff;
+    font-size: 32px;
+}
+
+ul{
+color: var(--gray-light);
+text-align: left;
+font-size: 18px;
+padding: 0;
+list-style-position: inside;/*coloca o marcador dentro da lista*/
+}
+
+p{
+    color: var(--gray-light);
+    font-size: 18px;
+}
+
+
+img{
+    display: block;
+    max-width: 100%; /*imagens fiquem responsivas*/
+}
+
+
+.container{
+
+    max-width: 1140px;
+    height: auto;
+   margin: 0 auto;
+   /*!important sobrescreve uma propriedade em conflito*/
+   padding-left: 15px !important;
+   padding-right: 15px !important;
+   /*centraliza a div*/
+}
+
+
+.header .container{
+   display: flex;/*iniciando o flexbox*/
+  justify-content: space-between;/*eixo x*/
+   align-items: center;/*eixo y*/
+
+
+}
+
+.header{
+
+    width: 100%;
+height: auto;
+background-color: rgba(0, 0, 0, 0.5);
+backdrop-filter: blur(5px);
+padding-top: 16px;
+padding-bottom: 16px;
+position: fixed;
+top: 0;
+z-index: 1000;/*o cabeçalho fica por cima de tudo*/
+}
+
+.header-scroll{
+    background-color: var(--primary);
+}
+
+
+
+/*formatando os links que estão dentro do menu*/
+.menu a{
+
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 110px;
+
+}
+
+.menu a:hover{
+
+    color: var(--primary-brand);
+}
+
+
+.bx-wrapper{
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.bg-1{
+    background-image: url(../img/background.jpg);
+}
+
+.bg-2{
+    background-image: url(../img/background-2.jpg);
+}
+
+
+.hero-section{
+  width: 100%;
+  height: 650px;
+ /* background-image: url(../img/background.jpg);*/
+background-size: cover; /*background ocupa toda a área*/
+background-position: center;
+display: flex;
+align-items: center;
+}
+
+.hero-section h1{
+ color: var(--gray-light);
+ font-size: 96px;
+ line-height: 90%;
+
+
+}
+
+.hero-section p{
+color: var(--gray-light);
+font-size: 24px;
+line-height: 120%;
+max-width: 790px;
+
+}
+
+
+.hero-section .container{
+position: relative;
+top: 50px;
+
+
+}
+
+
+/***************************UTILITARIOS***************/
+.btn, .btn-outiline{
+
+    background-color: var(--primary-brand);
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    padding: 13px 60px 9px 60px;/*top right bottom left*/
+    border-radius: 3px;
+    transition: 0.3s;
+    cursor: pointer;
+
+
+    }
+
+  .btn:hover{
+        color: var(--gray);
+        background-color: var(--contrast);
+
+
+}
+
+
+
+.btn-outiline{
+    background-color: transparent;
+    border: solid 2px var(--primary-brand);
+}
+
+.btn-outiline:hover{
+   background-color: var(--primary);
+   border: solid 2px var(--contrast);
+}
+
+
+
+/***************************UTILITARIOS***************/
+
+
+
+.academia{
+
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+   column-gap: 24px;/* espaço entre as colunas do flex*/
+
+}
+
+.academia .image{
+    width: 100%;
+
+
+}
+
+.bg-light{
+
+    background-color: var(--gray-light);
+    }
+
+    .bg-light h2{
+        color: var(--primary);
+    }
+    .bg-light p{
+        color: var(--primary);
+    }
+
+
+.faca-parte{
+padding: 20px; 0;
+position: relative;/*para servir de referencia ao positin:absolute da image*/
+   }
+
+.faca-parte .content{
+max-width: 850px;
+
+}
+
+.faca-parte .image{
+/*posição em relação ao elemento pai (desde que ele tenha position)
+     caso contrário, será em relação ao BODY*/
+position: absolute;
+bottom: 0;
+right: 0;
+
+}
+
+.planos{
+    background-image: url(../img/bg-planos.jpg);
+    background-size: cover;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.planos .content{
+
+    max-width: 946px;
+    margin: 0 auto; /*centraliza  div*/
+}
+
+.flex-cards{
+    display: flex;
+    column-gap: 24px;
+}
+
+.card{
+    background-color: rgba(0, 0, 0, 0.3);
+    border: solid 1px var(--gray-light);
+    border-radius: 3px;
+    padding:  30px;
+
+}
+
+.card span{
+
+    color: #fff;
+    font-size: 32px;
+    font-weight: 700px;
+}
+
+.card:hover{
+
+     transform: scale(1.05);/*aumenta a caixa*/
+     /* mexe a caixa 
+     transform: translateY(-10px);*/
+}
+
+.card a{
+    display: block;
+}
+
+
+.destaque{
+
+    border: solid 3px var(--primary-brand);
+}
+
+.destaque span{
+color: var(--contrast);
+
+}
+
+.fale-conosco{
+
+    display: flex;
+    column-gap: 24px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.fale-conosco input, .fale-conosco textarea{
+color: white;
+font-size: 18px;
+    display: block;
+    width: 100%;
+    height: 40px;
+    background-color: transparent;
+    border: solid 1px var(--gray-light);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;/*respeita as dimenções*/
+   
+}
+
+.fale-conosco textarea{
+    height: 140px;
+}
+
+.footer{
+    background-color: var(--primary-brand);
+    text-align: center;
+    padding: 14px 194px;
+}
+
+.footer p{
+    margin: 0;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+
+
+}
+
+.social a{
+    transition: 0.3s;
+}
+
+.social a:hover{
+transform: translateY(-5px);
+
+}
+
+/*Responsivo*/
+
+@media (max-width: 992px){
+
+
+.hero-section h1{
+    font-size: 64px;
+}
+
+
+    .menu{
+        /*display: none;*/
+        transform: translateX(-100%);
+        background-color: var(--primary-brand);
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 100vh; /*view  height ( unidade de medida baseada na tela)*/
+        transition: 0.3s ease-out;/*movimento do menu*/
+        /*display: flex;
+        flex-direction: column;*/
+
+    }
+
+
+    .menu a{
+        display: block;
+        margin: 0;
+        padding: 20px 15px;
+        border-bottom: 1px solid var(--primary);
+        
+    }
+
+
+.menu a:hover{
+    background-color: var(--primary);
+    color: #fff;
+    }
+
+    /*classe que será aplicada quando o usuário clicar para abrir o menu*/
+.menu-open{
+   /* display: block;*/
+   transform: translateX(0);
+}
+
+
+.bar{
+width: 40px;
+height: 3px;
+background-color: #fff;
+margin-bottom: 3px;
+transition: 0.3s;
+}
+
+/*Quando a .bar for o primeiro filho*/
+.x .bar:first-child{
+transform: rotate(45deg) translate(7px,2px);
+
+}
+
+/*Quando a .bar for o do meio filho*/
+.x .bar:nth-child(2){
+opacity: 0;
+transform: translateX(-200px);
+}
+
+/*Quando a .bar for o último filho*/
+.x .bar:last-child{
+    transform: rotate(-45deg) translate(6px,-2px);
+}
+
+
+.academia .image, .academia .content{
+    width: 50%;/*cada div dentro do conteiner tem 50%*/
+}
+
+.academia img{
+    max-width: 100%;
+}
+
+.faca-parte .content{
+    width: calc(100% - 200px);
+}
+
+
+.flex-cards{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+}
+
+.card{
+    max-width: 360px;
+}
+
+.fale-conosco{
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.map iframe{
+    width: 100%;
+}
+
+.footer{
+padding: 14px;
+}
+    
+}
+    
+
+@media (max-width: 820px){
+
+    h2{
+        font-size: 32px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+
+    .hero-section {
+       height: 520px;
+    }
+    .hero-section h1{
+        font-size: 36px;
+    } 
+
+    .hero-section p{
+        font-size: 20px;
+    }
+
+    .academia{
+        flex-direction: column;
+
+    }
+.academia .image, .academia .content{
+    width: 100%;/*cada div dentro do conteiner tem 100%*/
+    max-width: 558px;
+}
+
+.faca-parte .image{
+    display: none;
+}
+
+.faca-parte .content{
+    width: 100%;
+}
+
+}
+    
+@media (max-width: 414px){
+ 
+    .academia .fale-conosco{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+}
+    
